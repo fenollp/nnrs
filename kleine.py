@@ -24,11 +24,12 @@ sigmoid_prime = lambda x: x * (1 - x)
 np.random.seed(1)
 
 # Init weights randomly with mean 0
-syn0 = 2 * np.random.random((3,4)) -1
-syn1 = 2 * np.random.random((4,1)) -1
+syn0 = 2 * np.random.random((3, 1)) -1
+# syn0 = 2 * np.random.random((3, 4)) -1
+# syn1 = 2 * np.random.random((4, 1)) -1
 
 l0 = X
-for j in xrange(10_000):
+for j in xrange(10 * 1000):
     # Forward propagation
     l1 = sigmoid(np.dot(l0, syn0))
 
@@ -45,4 +46,5 @@ for j in xrange(10_000):
     # syn1 += np.dot(l1.T, l2_delta)
     # syn2 += np.dot(l0.T, l1_delta)
 
-print "Layer1:", l1
+print "Layer1:"
+print l1
