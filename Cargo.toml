@@ -1,0 +1,13 @@
+[package]
+name = "nnrs"
+version = "0.1.0"
+authors = ["Pierre Fenoll <pierrefenoll@gmail.com>"]
+
+description = "Neural Networks"
+repository  = "https://github.com/fenollp/nnrs"
+keywords    = ["neural networks", "machine learning"]
+
+[dependencies]
+randomkit = "0.1.0"
+ndarray = "0.3.0"
+meta_diff = "0.0.1"
